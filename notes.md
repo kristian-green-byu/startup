@@ -3,7 +3,8 @@ These notes comprise all my notes for CS260, and they may also be used on exams.
 ### Git Hub Commands
 From the GitHub lesson, several useful commands were shown.
 git clone 
->clones a repository<
+>clones a repository
+
 git add <file_name>
 >adds a file to a repository
 git commit -am "your comment here"
