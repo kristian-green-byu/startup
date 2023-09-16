@@ -2,4 +2,4 @@ Here is some text!
 
 I like this text. I just made an update to it on GitHub.
 
-Conflicts are interesting.
+I made an edit.
