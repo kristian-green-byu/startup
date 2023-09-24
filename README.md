@@ -22,7 +22,7 @@ I will use a variety of different programming languages to accomplish my goals.
 - HTML: Uses HTML as the backbone of the website and login pages. Hyperlinks are used to go to login or signup pages, and other HTML functionality is used to organize each section of the website.
 - CSS: Stylizes the HTML page to make it more aesthetically appealing and compatible with different devices. Uses fundamentals of design such as contrast.
 - Javascript: Enables login, submiting miles to the leaderboard, displaying leaderboard in realtime, and supports functionality so that users can add reviews. Will also provide backend endpoint calls. 
-- Service
+- Service: Provides endpoints for login, submitting miles, and retrieving scores or reviews.
 - DB
 - Login
 - Websocket
