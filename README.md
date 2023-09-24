@@ -21,9 +21,11 @@ Have you ever wanted to keep track of home many hikes you've completed and compe
 I will use a variety of different programming languages to accomplish my goals.
 - HTML: Uses HTML as the backbone of the website and login pages. Hyperlinks are used to go to login or signup pages, and other HTML functionality is used to organize each section of the website.
 - CSS: Stylizes the HTML page to make it more aesthetically appealing and compatible with different devices. Uses fundamentals of design such as contrast.
-- Javascript: Enables login, submiting miles to the leaderboard, displaying leaderboard in realtime, and supports functionality so that users can add reviews. Will also provide backend endpoint calls. 
+- Javascript: Enables login, submiting miles to the leaderboard, displaying the leaderboard, and supports functionality so that users can add reviews. Will also provide backend endpoint calls. 
 - Service: Provides endpoints for login, submitting miles, and retrieving scores or reviews.
-- DB
-- Login
-- Websocket
-- React
+- DB: Stores information such as users, miles, and reviews in the database.
+- Login: Allows users to register or login. Credentials will be securely stored to prevent dataleaks.
+- Websocket: Enables other users to see the leaderboard and reviews for trails.
+- React: Application will be designed to function within the React web framework.
+
+
