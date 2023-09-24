@@ -29,7 +29,7 @@ I will use a variety of different programming languages to accomplish my goals.
 - React: Application will be designed to function within the React web framework
 
 # Deliverables
-Note: As of now, I haven't finished any deliverables, so the information stated will certainly be subject to change
+Note: As of now, I haven't finished any deliverables, so the information stated will certainly be subject to change.
 
 ## HTML Deliverable
 I will implement the main functionality of my application with HTML.
