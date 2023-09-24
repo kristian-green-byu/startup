@@ -9,3 +9,11 @@ Have you ever wanted to keep track of home many hikes you've completed and compe
 ### Design
 ![hiked_mockup](https://github.com/kristian-green-byu/startup/assets/144286975/3aaaec5f-1faa-4d99-a70d-565b261fc932)
 
+### Key Features
+- Secure login using HTTPS
+- Leaderboard is displayed and updated in realtime
+- Displays popular trails
+- Ability of admin to edit the trails list.
+- Users are able to append reviews to trails
+- The leaderboard is updated depending on the total miles that each user inputs
+
