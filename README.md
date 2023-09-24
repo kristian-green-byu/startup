@@ -15,5 +15,7 @@ Have you ever wanted to keep track of home many hikes you've completed and compe
 - Displays popular trails
 - Ability of admin to edit the trails list.
 - Users are able to append reviews to trails
-- The leaderboard is updated depending on the total miles that each user inputs
+- Leaderboard position is updated depending on the total miles that each user inputs
 
+### Technologies
+I will use a variety of different programming languages to accomplish my goals.
