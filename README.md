@@ -28,4 +28,18 @@ I will use a variety of different programming languages to accomplish my goals.
 - Websocket: Enables other users to see the leaderboard and reviews for trails.
 - React: Application will be designed to function within the React web framework.
 
+## HTML Deliverable
 
+## CSS Deliverable
+
+## JavaScript Deliverable
+
+## Service Delivarable
+
+## DB Deliverable
+
+## Login Deliverable
+
+## Websocket Deliverable
+
+## React Deliverable
