@@ -4,7 +4,7 @@ the [notes.md](https://github.com/kristian-green-byu/startup/blob/main/notes.md)
 # Hiked
 ## Description Deliverable
 ### Elevator Pitch
-Have you ever wanted to compete with your friends to see who can conquer more trails? With Hiked, you can do just that. Hiked is designed so that you can track the total hikes you finish along with their statistics. The application takes these statistics and imports them into an internal leaderboard system to encourage healthy competition among friends. In addition, Hiked supports leaving reviews so you can plan your trips according to what others have said about specific trails. If you don't know where to begin, Hiked displays the most popular trails on the front page so that you can take inspiration from others and have an adventure.
+Have you ever wanted to compete with your friends to see who can conquer more trails? With Hiked, you can do just that. Hiked is designed so that you can track the total hikes you finish along with their statistics. The application takes these statistics and imports them into an internal leaderboard system to encourage healthy competition among friends. In addition, Hiked displays some of the most popular trails so you can plan your trips according to what others have said. If you don't know where to begin, Hiked displays the most popular trails on the front page so that you can take inspiration from others and have an adventure.
 
 ### Design
 ![hiked_mockup](https://github.com/kristian-green-byu/startup/assets/144286975/3aaaec5f-1faa-4d99-a70d-565b261fc932)
@@ -14,7 +14,6 @@ Have you ever wanted to compete with your friends to see who can conquer more tr
 - Leaderboard is displayed and updated in realtime
 - Displays popular trails
 - Ability of admin to edit the trails list
-- Users are able to append reviews to trails
 - Leaderboard position is updated depending on the total miles that each user inputs
 
 ### Technologies
@@ -32,14 +31,14 @@ I will use a variety of different programming languages to accomplish my goals.
 Note: As of now, I haven't finished any deliverables, so the information stated will certainly be subject to change.
 
 ## HTML Deliverable
-I will implement the main functionality of my application with HTML.
-- Links: I will have links to the login page, and I will also have links to allow users to access parts of the website that support statistics or reviews
-- Text: Most of the text of the application will utilize HTML. It will be stylized with CSS
-- Images: Images of each trail will be included with HTML functionality
-- HTML Pages: Application has at least two pages to support login and the leaderboard, but it may require more
-- Login: HTML will support functionality for logginng in and registration
-- Database: The leaderboard and reviews will be updated with information from the database
-- WebSocket: Functionality allows leaderboard to be updated in realtime
+I implemented the main functionality of my application with HTML.
+- Links: I have links to all pages on the website including the mainpage, other trails, and links to signup, login, or submit miles.
+- Text: I implemented the text I will use for my website. It will later be stylized with CSS.
+- Images: Images of each trail are displayed, and a small icon is given to the top player in the leaderboard.
+- HTML Pages: My application has a total of 5 HTML pages to support different functions of the website.
+- Login: I have placeholders with links using HTML that will later support login.
+- Database: The leaderboard will be updated with information from the database
+- WebSocket: I put in place holders which, using WebSocket in the future, will allow the leaderboard to be updated in realtime
 
 ## CSS Deliverable
 To make things look more appealing, I will use CSS to stylize the website.
