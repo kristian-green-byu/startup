@@ -37,8 +37,8 @@ I implemented the main functionality of my application with HTML.
 - Images: Images of each trail are displayed, and a small icon is given to the top player in the leaderboard.
 - HTML Pages: My application has a total of 5 HTML pages to support different functions of the website.
 - Login: I have placeholders with links using HTML that will later support login.
-- Database: The leaderboard will be updated with information from the database
-- WebSocket: I put in place holders which, using WebSocket in the future, will allow the leaderboard to be updated in realtime
+- Database: The leaderboard will be updated with information from the database. Also, information from each user will be stored in the database. Placeholders are all implemented to highlight this functionality.
+- WebSocket: I put in place holders which, using WebSocket in the future, will allow the leaderboard to be updated in realtime.
 
 ## CSS Deliverable
 To make things look more appealing, I will use CSS to stylize the website.
