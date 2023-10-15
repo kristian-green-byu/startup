@@ -47,6 +47,7 @@ I implemented CSS to make my website both more appealing and also one step close
 - Application text: The application has consistent font throughout. I decided to use Gill Sans for my website, and I changed all the font to be of that type in the body for consistency.
 - Images: I added borders around my images, and I also padded them to make them more visually appealing and compatible with mobile devices. I also added a carousel using bootstap functionality to make my website more interactive.
 - Forms and Tables: I modified bootstrap templates to add functional forms and tables into my website that provide better placeholders to build upon with future deliverables.
+- Other application elements - All remaining application elements that I built with HTML now have CSS tied to them both with both Bootstrap and proprietary code. I used some aspects of design such as contrast to make the website more easy to read and more appealing.
    
 ## JavaScript Deliverable
 Javascript will support the application by adding user functionality and powering the leaderboard sorting algorythms.
