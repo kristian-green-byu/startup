@@ -42,11 +42,13 @@ I implemented the main functionality of my application with HTML.
 
 ## CSS Deliverable
 To make things look more appealing, I will use CSS to stylize the website.
-- Header, footer, and body elements: CSS will make them more aesthetic
-- Support for different device types: CSS will be used to make the website compatible with both computers and phones with different screen sizes
-- Application text: Will have consistent and effective fonts
-- Images: Will modify images to make them blend in to the style of the website
-
+I implemented CSS to make my website both more appealing and also one step closer to having additional functionalities. 
+- Header, footer, and body elements: I used CSS to make them more aesthetic and interactive. The buttons change when a user hovers their mouse over them, and the password input forms hide their information
+- Support for different device types: I used CSS to make the website compatible with both computers and phones with different screen sizes.
+- Application text: The application has consistent font throughout. I decided to use Gill Sans for my website, and I changed all the font to be of that type in the body for consistency.
+- Images: I added borders around my images, and I also padded them to make them more visually appealing and compatible with mobile devices. I also added a carousel using bootstap functionality to make my website more interactive.
+- Forms and Tables: I modified bootstrap templates to add functional forms and tables into my website that provide better placeholders to build upon with future deliverables.
+   
 ## JavaScript Deliverable
 Javascript will support the application by adding user functionality and powering the leaderboard sorting algorythms.
 - Login: Javascript will be used to tie in the login process to the rest of the program
