@@ -41,7 +41,6 @@ I implemented the main functionality of my application with HTML.
 - WebSocket: I put in place holders which, using WebSocket in the future, will allow the leaderboard to be updated in realtime.
 
 ## CSS Deliverable
-To make things look more appealing, I will use CSS to stylize the website.
 I implemented CSS to make my website both more appealing and also one step closer to having additional functionalities. 
 - Header, footer, and body elements: I used CSS to make them more aesthetic and interactive. The buttons change when a user hovers their mouse over them, and the password input forms hide their information
 - Support for different device types: I used CSS to make the website compatible with both computers and phones with different screen sizes.
