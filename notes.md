@@ -2777,3 +2777,150 @@ console.log('done');
 // OUTPUT: done
 ```
 
+# Debugging JavaScript
+
+📖 **Deeper dive reading**: [MDN Console](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+
+It is inevitable that your code is going to have problems, or bugs, at some point. That may be while you are originally authoring it, working on other code that changes assumed dependencies, or while enhancing the code with new functionality.
+
+Learning how to quickly discover, and resolve, bugs will greatly increase your value as a web developer. Additionally, debugging skills can also be used during the development process. By following a pattern of writing a block of code and then stepping through, or debugging, the block, you gain confidence that the block is working as desired before moving on to the next block.
+
+## Console debugging
+
+One of the simplest ways to debug your JavaScript code is to insert `console.log` functions that output the state of the code as it executes. For example, we can create a simple web application that has an HTML and JavaScript file that demonstrates the difference between `let` and `var`. By inserting `console.log` statements into the code, we can see what the value of each variable is as the code executes.
+
+**index.html**
+
+```html
+<body>
+  <h1>Debugging</h1>
+  <script src="index.js"></script>
+</body>
+```
+
+**index.js**
+
+```js
+var varCount = 20;
+let letCount = 20;
+
+console.log('Initial - var: %d, let: %d', varCount, letCount);
+
+for (var varCount = 1; varCount < 2; varCount++) {
+  for (let letCount = 1; letCount < 2; letCount++) {
+    console.log('Loop - var: %d, let: %d', varCount, letCount);
+  }
+}
+
+const h1El = document.querySelector('h1');
+h1El.textContent = `Result - var:${varCount}, let:${letCount}`;
+console.log('Final - var: %d, let: %d', varCount, letCount);
+```
+
+Take the following steps to see the result of console debugging.
+
+1. Create the above files in a test directory named testConsole
+1. Open the testConsole directory in VS Code
+1. Run index.html using the VS Code Live Server extension
+1. Open the Chrome browser debugger (press `F12`)
+1. Select the `Console` tab
+1. Refresh the browser
+
+You should see the following result.
+
+![JavaScript console debugging](javascriptDebugConsole.jpg)
+
+You can use the debugger console window to inspect variables without using the `console.log` function from your code. For example, if you type varCount in the console window it will print out the current value of varCount. You can also execute JavaScript directly in the console window. For example, if you type `varCount = 50` and press `Enter` it will change the current value of varCount.
+
+![JavaScript console debugging variables](javascriptDebugConsoleVars.jpg)
+
+## Browser debugging
+
+`console.log` debugging is great for times when you just need to quickly see what is going on in your code, but to really understand the code as it executes you want to use the full capabilities of the browser's debugger.
+
+Using the same setup we used for `console.log` debugging, open up Chrome's browser debugger, but this time select the source tab. This will display the source files that comprise the currently rendered content.
+
+![JavaScript source debugging](javascriptDebugSource.jpg)
+
+You can either select `index.js` from the source view on the left, or press `CTRL-P` (on Windows) or `⌘-P` (on Mac) and then select `index.js` from the list that pops up. Then set a breakpoint on line 4 by clicking on the line number on the left of the displayed source code. This makes it so that the execution of code will pause whenever that line is executed. Refreshing the browser window will cause `index.js` to reload and pause on the breakpoint.
+
+![JavaScript breakpoint](javascriptDebugBreakpoint.jpg)
+
+With the browser paused in the debugger you can move your mouse cursor over a variable to see its value, see what variables are in scope, set watches on variables, or use the console to interact with the code.
+
+This gives you complete control to inspect what the JavaScript code is doing and experiment with possible alternative directions for the code. Take some time to poke around in the debugger. Learning how to exploit its functionality will make you a much better web developer.
+
+# Simon JavaScript
+
+🎥 **Instruction video**: [Simon JavaScript](https://youtu.be/hqzXN-n2Q5I)
+
+![Simon](../simon.png)
+
+This deliverable demonstrates the use of basic JavaScript for interactivity. This addition makes the application completely functional. The application has a login (home), game play, high scores, and about page. Each page contains a header that provides navigation between the pages, and a footer that references the source repository.
+
+## Adding JavaScript
+
+The major changes to the application include the introduction of `login.js`, `play.js`, and `scores.js`. When a user enters their login name, `login.js` puts that name in the browser's local storage so that it is available the next time they use the application. `play.js` controls all the game interactions and stores the resulting score in the browser's local storage. `scores.js` retrieves the high scores from local storage so that they can be displayed.
+
+### index.html and login.js
+
+The first place we used JavaScript in Simon, allows the user to provide their name. We then store that name in the Browser's local storage cache. Once in the cache we can read the value from other html pages, or even later browser sessions on the same device.
+
+Notice the inclusion of a `onclick` call to the `login` function found in the `login.js` file. We reference the `login.js` file by including an HTML `script` element.
+
+```html
+<script src="login.js"></script>
+
+//...
+
+<input type="text" id="name" placeholder="Your name here" />
+<button class="btn btn-primary" onclick="login()">Login</button>
+```
+
+In the `login.js` file we handle a click on the login button by using the document object's querySelector function to get the input element's value and store it in local storage. We then redirect the browser to display the `play.html` page.
+
+```js
+function login() {
+  const nameEl = document.querySelector('#name');
+  localStorage.setItem('userName', nameEl.value);
+  window.location.href = 'play.html';
+}
+```
+
+### scores.js
+
+The `scores.js` reads the current high scores out of local storage and injects the values into the DOM usinng `createElement` and `appendChild` calls.
+
+### play.js
+
+This is where all the game play interactions occur. There are two classes one for `Button` and one for `Game`. The Button class handles the playing of the button's audio file, along with the change in color, when a button is pressed.
+
+The Game class manages the current sequence that a user is supposed to duplicate. This is done with the `reset` function to clear out the sequence and add a new random button, and the `playSequence` function that plays the sequence for the user to duplicate.
+
+## Study this code
+
+Get familiar with what the example code teaches.
+
+- Clone the repository to your development environment.
+
+  ```sh
+  git clone https://github.com/webprogramming260/simon-javascript.git
+  ```
+
+- Review the code and get comfortable with everything it represents.
+- View the code in your browser by hosting it using the VS Code Live Server extension.
+- Make modifications to the code as desired. Experiment and see what happens.
+
+## Deploy to production
+
+- Deploy to your production environment using a copy of the `deployFiles.sh` script found in the [example class application](https://github.com/webprogramming260/simon-javascript/blob/main/deployFiles.sh). Take some time to understand how it works.
+
+  ```sh
+  ./deployFiles.sh -k <yourpemkey> -h <yourdomain> -s simon
+  ```
+
+  For example,
+
+  ```sh
+  ./deployFiles.sh -k ~/keys/production.pem -h yourdomain.click -s simon
+  ```
