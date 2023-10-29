@@ -29,7 +29,9 @@
             </ul>
     
             
-            <p class="user">Welcome, Placehold_user!</p>
+            <p class="user">Welcome,</p>
+            <span class="player-name"></span>
+            <div></div>
             <div class="text-end">
               
               <a href="index.html" class="btn btn-outline-light me-2">Logout</a>
@@ -43,69 +45,47 @@
     <main>
         <h2>Your Statistics</h2>
         <div>
+
           <table class="table table-striped">
             <thead>
             <tr>
               <th scope="col">Trail Number</th>
               <th scope="col">Trail Name</th>
-              <th scope="col">Trail Statistics</th>
+              <th scope="col">Miles</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Angel's Landing Trail</td>
-              <td>4.3 Miles With 1827ft of Elevation Gain</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Timpanogos Cave Trail</td>
-              <td>3.1 Miles and 1505 feet of Elevation Gain</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Delicate Arch Trail</td>
-              <td>3.2 Miles and 629ft of Elevation Gain</td>
+            <tbody id="leaderboard">
+            
             </tbody>
           </table>
         </div>
+       
+
+        
         <div class="divider"></div>
+
         <h2>Record a Hike</h2>
         <div class="form_padding">
           <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
-          <form class="row g-3">
-            <div class="col-md-4">
-              <label for="validationServer01" class="form-label">Name of Hike</label>
-              <input type="text" class="form-control is-valid" id="validationServer01" value="Henry's Fork Trail" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
+          <form class="row g-3" id="update-form">
+            <div class="col-md-6">
+              <label class="form-label">Name of Hike</label>
+              <input type="text" class="form-control" id="name">
             </div>
-            <div class="col-md-4">
-              <label for="validationServer02" class="form-label">Number of Miles</label>
-              <input type="text" class="form-control is-valid" id="validationServer02" value="25.0 miles" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationServerUsername" class="form-label">Elevation Gain</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend3"></span>
-                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
-                <div class="invalid-feedback">
-                  Please enter your elevation gain in feet.
-                </div>
-              </div>
+            <div class="col-md-6">
+              <label class="form-label">Number of Miles</label>
+              <input type="text" class="form-control" id="score">
             </div>
     
-            <div class="col-12">
-              <button class="btn btn-secondary" type="submit">Submit form</button>
+            <div>
+              <button class="btn btn-secondary" type="submit">Submit Entry</button>
             </div>
           </form>
           </div></div>
-  
+ 
         </div>
+        
+
     </main>
     <div class="divider"></div>
 
@@ -126,5 +106,6 @@
         </footer>
       </div>
     </footer>
+    <script src="miles.js"></script>
   </body>
 </html>
