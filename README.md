@@ -50,11 +50,11 @@ I implemented CSS to make my website both more appealing and also one step close
 - Other application elements - All remaining application elements that I built with HTML now have CSS tied to them both with both Bootstrap and proprietary code. I used some aspects of design such as contrast to make the website more easy to read and more appealing.
    
 ## JavaScript Deliverable
-Javascript will support the application by adding user functionality and powering the leaderboard sorting algorythms.
-- Login: Javascript will be used to tie in the login process to the rest of the program
-- Logic: Javascript will allow miles to be calculated so that the leaderboard can be updated depending on user inputs
-- database: Will retrieve information about the leaderboard and reviews from the database
-- WebSocket: WebSocket messages will support leaderboard functionality
+I used Javascript to add basic user functionality and leaderboard sorting algorythms that will tie in with later deliverables such as the service, Login, or DB deliverables. 
+- Login: With Javascript, the program now stores login information locally as a placeholder for future functionality. It allows users to input miles that are unique to their accounts. The login information isn't uploaded to a database yet, however.
+- Interaction Logic: I used Javascript to calculate the total miles for each user so that it can be displayed on the index page. Javascript functionality also automatically sorts leaderboards so that they are in order. The logic also automatically clears the mile input page for new users.
+- Websocket: Current leaderboard functionality uses placeholders with local storage that will later be updated to use Websocket as to allow the leaderboard to updated in realtime from multiple users. The leaderboard is currently updated in realtime with local storage only, so the changes made on the website aren't apparent to other users.
+- Support for Database: I wrote Javascript code to create several leaderboard objects and usernames in my localstorage that will later be uploaded to the database so that changes in my website can be seen by all users.
 
 
 ## Service Delivarable
