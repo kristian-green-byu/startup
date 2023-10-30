@@ -3272,3 +3272,14 @@ Get familiar with what the example code teaches.
   ```sh
   ./deployFiles.sh -k ~/keys/production.pem -h yourdomain.click -s simon
   ```
+
+# Console Commands
+
+In Unix operating systems, the chmod command is used to change the access mode of a file. The name is an abbreviation of change mode.
+
+'pwd' stands for 'Print Working Directory'. As the name states, command 'pwd' prints the current working directory or simply the directory user is, at present.
+
+cd = change directory
+
+ls = lists all the files and directories under a specified directory
+
