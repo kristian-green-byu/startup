@@ -694,7 +694,7 @@ In this case, the rules cascade down from the highest nodes in the DOM tree to t
 
 CSS defines everything as boxes. When you apply styles, you are applying them to a region of the display that is a rectangular box. Within an element's box there are several internal boxes. The innermost box holds the element's content. This is where things like the text or image of an element is displayed. Next comes the padding. The padding will inherit things like the background color. After padding is the border, which has properties like color, thickness and line style. The final box is the margin. The margin is considered external to the actual styling of the box and therefore only represents whitespace. It is important to understand each of these boxes so that you can achieve the desired visual result by applying the proper CSS declaration.
 
-![CSS box model]([cssBoxModel.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Flevelup.gitconnected.com%2Fcss-box-model-explained-60fc76fe9c4d&psig=AOvVaw1_3CsEAGftXyNuKFsJltK0&ust=1698763508465000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPjK3N-BnoIDFQAAAAAdAAAAABAE))
+![CSS box model]([cssBoxModel.jpg])
 
 By default, the width and height of an element is defined by the width and height of the content box. You can change the `box-sizing` CSS property from the default value of `content-box` to `border-box` in order to redefine the width and height to also include the padding and the border. This often makes it easier to style elements when their visual size matches their actual size.
 
