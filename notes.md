@@ -3283,6 +3283,8 @@ cd = change directory
 
 ls = lists all the files and directories under a specified directory
 
+ls flags:
+
 -A	Lists all entries except . (dot) and .. (dot-dot).
 
 -a	Lists all entries in the directory, including the entries that begin with a . (dot).
