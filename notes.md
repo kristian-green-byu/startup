@@ -3451,3 +3451,58 @@ sudo:
 To run commands with superuser privileges, use the sudo command. sudo stands for superuser do.
 
 The sudo command allows you to run programs with the security privileges of another user (by default, as the superuser). It prompts you for your personal password and confirms your request to execute a command by checking a file, called sudoers , which the system administrator configures.
+
+# Top Level domains, root domains, and sub domains:
+
+What is the difference between Root domains and Subdomains?
+The root domain name is your website’s main or primary domain. It is the simplest form of a domain name. It can stand alone, and it can also have one or more subdomains branching out from it.
+
+On the other hand, a subdomain is like a subsection or a smaller part of the main website. A subdomain always belongs to a root domain. For example, careers.siteground.com is a subdomain of the base domain siteground.com.
+
+Subdomains help organize website content and make it easier to navigate. They can also have their own individual pages or even separate websites with unique content, design, and functionality. You can access the root domain and all its subdomains through their own web addresses, and they all fall under the same main domain.
+
+In short, the primary difference is that the root domain represents the main website (or company), while subdomains are separate sections or websites within the main domain.
+
+What is the difference between Root domains and Top-Level domains (TLD)?
+The root-level domain is like the main folder of a website, where all the other folders and files are stored. It is the topmost part of a website’s address and represents the ground level of the website’s identity. For example, in the website address “www.siteground.com,” “siteground.com” is the root domain.
+
+In contrast, a top-level domain (TLD) is the suffix that follows the domain name, such as .com, .org, .edu, .gov, and so on. TLDs are also referred to as “domain extensions”. It is the last part of the website’s address and comes after the root domain.
+
+An infographic explaining the difference between a root domain and TLDs
+For example, in the website address “www.example.com,” “.com” is the top-level domain. Other examples of TLDs include “.org,” “.net,” “.edu,” and “.gov.”
+
+The key difference between a top-level and a root domain is that a TLD is a part of the domain name system, whereas a root domain is a part of the web hosting system. In that sense, TLDs are used to classify and categorize websites, while root domains are used to organize and manage website content.
+
+## Web certificate for https
+To use HTTPS with your domain name, you need a SSL or TLS certificate installed on your website. Your web host (Web Hosting Provider) may offer HTTPS security or you can request a SSL/TLS certificate from Certificate Authorities and install it yourself. SSL/TLS certificates may need to be renewed periodically.
+
+## DNS A records
+
+
+In this article, we’ll focus on one fundamental type—the DNS A record. Read on to find out what a DNS A record is, and how to add, edit, and delete an A record on your DNS server.
+
+What is a DNS “A” Record?
+A DNS A record is the most fundamental type of DNS record. The A stands for “Address,” and it’s used to point a domain name to an IP address or host. You can only use an A record when you want to point to an IPv4 address. An AAAA record is required if you wish to direct your domain to an IPv6 address. 
+
+The DNS A record points a domain name like google.com to the IP address of itsDNS hosting server, in this case, “74.125.224.147.” While most sites have a single A DNS record, it’s possible to have multiple records. 
+
+Another vital aspect of a DNS A record is that you can use it (often with a CNAME record) to create a subdomain that also points to the same IP address, for instance, blog.example.com.
+
+
+# Ports
+
+What is a Port?
+Generally, Port is used to make the computer understand what type of data is received from or sent to a computer over the similar network connection. Each Port is assigned with different functionality and a port number like Port 80, 443, 21, 25, etc. Port is a virtual numbered address used as an endpoint for communication to the various Transport Layer Protocols.
+
+Transport Layer protocols include Transfer Control Protocol (TCP) and User Datagram Protocol (UDP) and are used in data transmission over the Internet.
+
+UDP is mostly used for large volumes of data transfer where security is not of much significance, while TCP is used where data security is of prime importance. When data transfer occurs, each data pack comes with a port number attached to it, and the protocol directs each data pack to the appropriate Port with accuracy. According to the SMB vulnerability report, 65% of attacks target the main three ports: SSH- 22/TCP, HTTPS-443/TCP and HTTP-80/TCP.
+
+Port 22
+Secure Shell (SSH),[11] secure logins, file transfers (scp, sftp) and port forwarding
+
+Port 80
+HTTP Port-80 is used for HTTP (Hyper Text Transfer Protocol) connection by default. It is a popular and widely used port across the globe. Port 80 was introduced by Tim Berners-Lee in 1991 in the HTTP 0.9 document. The document states that if there is no port assigned for HTTP connection, Port 80 is used by default. It connects you to the worldwide web (WWW). A user, with the help of this port, can connect to webpages available on the internet. It means unencoded data exchange takes place between the user’s browser and the server using this port. This port relates to TCP (Transfer Control Protocol- a protocol used in data transmission).
+
+Port 443
+HTTPS (Hypertext Transfer Protocol Secure) is a secured HTTP version where all traffic is bind with strong encryption that passes through 443. This port is also connected with TCP protocol and creates a secure connection between the webpages and browser. HTTPS Port 443 was officially published in RFC 1700 and solicited by “Kipp E.B. Hickman”. The main difference between Port 80 and Port 443 is strong security. Port-443 allows data transmission over a secured network, while Port 80 enables data transmission in plain text. Users will get an insecure warning if he tries to access a non-HTTPS web page. Port 443 encrypts network data packets before data transmission takes place. The security over port 443 is used by the SSL protocol (secure socket layer).
