@@ -3283,3 +3283,108 @@ cd = change directory
 
 ls = lists all the files and directories under a specified directory
 
+Vim commands:
+h moves the cursor one character to the left.
+j moves the cursor down one line.
+k moves the cursor up one line.
+l moves the cursor one character to the right.
+0 moves the cursor to the beginning of the line.
+$ moves the cursor to the end of the line.
+w move forward one word.
+b move backward one word.
+G move to the end of the file.
+gg move to the beginning of the file.
+`. move to the last edit.
+
+## Nano
+
+Nano is a relatively simple open source text editor.
+*Meta <alt> requires changes to OSX Terminal.
+File operations
+Command Description Comments
+nano [filename] Opens the file in nano for editing. Ex) nano index.html
+Ctrl-r then Alt-f Opens a new file buffer This lets you switch between
+multiple files.
+Alt-> and Alt-< Tabs between file buffers
+Ctrl-o Write changes to a file Will prompt for file name
+Ctrl-x Quits nano Will prompt if there are unsaved
+changes.
+Navigation
+Command Description Comments
+Ctrl-a Move to beginning of current line
+Ctrl-e Move to end of current line
+Ctrl-v Move down one page
+Ctrl-y Move up one page
+Alt-\ and Alt-/ Go to beginning or end of file
+Alt-g Go to a target line (and column)
+number
+Alt-g followed by 5,3 goes to line
+five, column three
+Alt-] Go to matching grouping symbol
+(parenthesis, brackets, etc.)
+Copy and Paste
+Command Description Comments
+Alt-a Selects a block; Alt-a again
+unselects
+Ctrl-k Cuts from the cursor to the
+Ctrl-u Pastes clipboard to the cursor’s
+position
+Alt-a then Alt-^ Copies highlighted block to the
+clipboard
+Alt-a then Ctrl-k Cuts a highlighted block to the
+clipboard
+Search and Replace
+This workforce product was funded by a grant awarded by the U.S. Department of Labor’s
+Employment and Training Administration. The product was created by the grantee and
+does not necessarily reflect the official position of the U.S. Department of Labor. The U.S.
+Department of Labor makes no guarantees, warranties, or assurances of any kind, express
+or implied, with respect to such information, including any information on linked sites and
+including, but not limited to accuracy of the information or its completeness, timeliness,
+usefulness, adequacy, continued availability, or ownership.
+Nano Commands
+Nano is a relatively simple open source text editor.
+*Meta <alt> requires changes to OSX Terminal.
+Command Description Comments
+Ctrl-w Searches for a string of text
+Alt-w Repeats the previous search
+Alt-r Searches and replaces
+
+mkdir:
+Use the mkdir command to create one or more directories specified by the Directory parameter.
+
+Each new directory contains the standard entries dot (.) and dot dot (..). You can specify the permissions for the new directories with the -m Mode flag.
+
+When you create a directory, it is created within the current, or working, directory unless you specify an absolute path name to another location in the file system.
+
+mv:
+The mv command moves files and directories from one directory to another or renames a file or directory.
+
+rm:
+Use the rm command to remove files you no longer need.
+
+man:
+Stands for manual
+
+Just about every program you have installed in your server comes with detailed documentation on how to use it properly. Reading man pages is a great way to unlock the power of your command line utilities, and, for some users, the man pages can be faster and more accurate than search engine results.
+
+That being said, man pages can be very terse. This makes them ideal for advanced users, and perhaps intimidating for newer users. Nevertheless, newer Linux users should give them a try and see how they like it.
+
+How to Read Man Pages on Command Line
+Using man is as simple as opening your Terminal emulator, or logging into your server via SSH. Once there, you can simply type man followed by the program you want to learn about.
+
+ssh:
+
+The ssh command is used to securely log into a remote machine and execute commands on that machine. The basic syntax of the command is “ssh user@host”, where user is the username on the remote machine and host is the address or hostname of the remote machine.
+
+ps:
+
+ps command is used to list the currently running processes and their PIDs along with some other information depends on different options. It reads the process information from the virtual files in /proc file-system. /proc contains virtual files, this is the reason it's referred as a virtual file system.
+
+wget:
+
+Downloading files with wget is easy. Type wget followed by the file URL you wish to download to your command prompt app, and the download should begin after you press enter.
+
+sudo:
+To run commands with superuser privileges, use the sudo command. sudo stands for superuser do.
+
+The sudo command allows you to run programs with the security privileges of another user (by default, as the superuser). It prompts you for your personal password and confirms your request to execute a command by checking a file, called sudoers , which the system administrator configures.
