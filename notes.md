@@ -3283,6 +3283,67 @@ cd = change directory
 
 ls = lists all the files and directories under a specified directory
 
+-A	Lists all entries except . (dot) and .. (dot-dot).
+
+-a	Lists all entries in the directory, including the entries that begin with a . (dot).
+
+-b	Displays nonprintable characters in an octal (\nnn) notation.
+
+-c	Uses the time of last modification of the i-node for either sorting (when used with the -t flag) or for displaying (when used with the -l flag). This flag must be used with either the -t or -l flag, or both.
+
+-C	Sorts output vertically in a multicolumn format. This is the default method when output is to a terminal.
+
+-d	Displays only the information for the directory named. Directories are treated like files, which is helpful when using the -l flag to get the status of a directory.
+
+-e	Displays the mode (including security information), number of links, owner, group, size (in bytes), time of last modification, and name of each file. If the file is a special file, the size field contains the major and minor device numbers. If the file is a symbolic link, the path name of the linked-to file is printed preceded by a -> (minus, greater than) sign. The attributes of the symbolic link are displayed.
+
+-f	Lists the name in each slot for each directory specified in the Directory parameter. This flag turns off the -l, -t, -s, and -r flags, and turns on the -a flag. The order of the listing is the order in which entries appear in the directory.
+
+-F	Puts a / (slash) after each file name if the file is a directory, an * (asterisk) if the file can be executed, an = (equal sign) if the file is a socket, a | (pipe) sign if the file is a FIFO, and an @ for a symbolic link.
+Note: Symbolic links are displayed with the trailing -> only if the -N flag is used or if the link points to a nonexistent file. Otherwise, information about the target file is displayed. You can also invoke this option by entering the ls -f command.
+
+-g	Displays the same information as the -l flag, except the -g flag suppresses display of the owner and symbolic link information.
+
+-i	Displays the i-node number in the first column of the report for each file.
+
+-L	Lists the file or directory contents that the link references. This is the default action. Symbolic links are followed. If the -l option is used, the -N option becomes the default, and no symbolic links are followed. When the -l option is used, only the -L option can override the -N default.
+
+-l	(Lower case L) Displays the mode, number of links, owner, group, size (in bytes), and time of last modification for each file. If the file is a special file, the size field contains the major and minor device numbers.
+If the file is a symbolic link, the path name of the linked-to file is printed preceded by a ->. The attributes of the symbolic link are displayed. The -n, -g, and -o flag overrides the -l flag.
+
+Notes:
+A symbolically linked file is followed by an arrow and the contents of the symbolic link.
+The performance of the ls command when used with the -l option can be improved by executing the mkpasswd command. This is helpful when a directory contains files owned by different users, such as the /tmp directory.
+
+-m	Uses stream output format (a comma-separated series).
+
+-n	Displays the same information as the -l flag, except that the -n flag displays the user and the group IDs instead of the user and group names.
+
+-N	Does not follow symbolic links when determining the status of a file.
+
+Note: If both the -L and -N options are used, the last one will dominate. Also, any time a symbolic link is given that includes a / (slash) as the final character, the link will automatically be followed regardless of any options used.
+
+-o	Displays the same information as the -l flag, except the -o flag suppresses display of the group and symbolic link information.
+
+-p	Puts a slash after each file name if that file is a directory. This is useful when you pipe the output of the ls command to the pr command, as follows:
+ls  -p |  pr  -5  -t  -w80
+
+-q	Displays nonprintable characters in file names as a ? (question mark).
+
+-r	Reverses the order of the sort, giving reverse alphabetic or the oldest first, as appropriate.
+
+-R	Lists all subdirectories recursively.
+
+-s	Gives size in kilobytes (including indirect blocks) for each entry.
+
+-t	Sorts by time of last modification (latest first) instead of by name.
+
+-u	Uses the time of the last access, instead of the time of the last modification, for either sorting (when used with the -t flag) or for displaying (when used with the -l flag). This flag has no effect if it is not used with either the -t or -l flag, or both.
+
+-x	Sorts output horizontally in a multicolumn format.
+
+-1	Forces output into one-entry-per-line format. This is the default when the output is not directed to a terminal.
+
 Vim commands:
 h moves the cursor one character to the left.
 j moves the cursor down one line.
