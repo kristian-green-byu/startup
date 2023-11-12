@@ -59,7 +59,7 @@ I used Javascript to add basic user functionality and leaderboard sorting algory
 
 ## Service Delivarable
 I used service to add backend endpoints to make my leaderboard function across multiple devices.
-- Utilized Node.js and Express to create a storage space for Javascript objects.
+- I utilized Node.js and Express to create a storage space for Javascript objects.
 - My frontend about.js file calls a third party service endpoint to provide jokes on the about.html page.
 - I created code so that my backend provides end points to store leaderboard information imported from miles.js.
 - I added some express endpoints that will be used with my next deliverables to eventually support the creation of accounts.
