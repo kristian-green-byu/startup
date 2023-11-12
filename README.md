@@ -58,9 +58,12 @@ I used Javascript to add basic user functionality and leaderboard sorting algory
 
 
 ## Service Delivarable
-I will use service to add backend endpoints to make the leaderboard function.
-- Backend service endpoints: Keeps track of login information and supports endpoints for leadership information
-- Frontend calls service endpoints
+I used service to add backend endpoints to make my leaderboard function across multiple devices.
+- Utilized Node.js and Express to create a storage space for Javascript objects.
+- My frontend about.js file calls a third party service endpoint to provide jokes on the about.html page.
+- I created code so that my backend provides end points to store leaderboard information imported from miles.js.
+- I added some express endpoints that will be used with my next deliverables to eventually support the creation of accounts.
+- The main leaderboard listed on the index.html page imports its values from a backend service call.
 
 ## DB Deliverable
 Values for the leaderboard will be stored in the database.
