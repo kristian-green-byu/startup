@@ -71,8 +71,11 @@ I stored values for the leaderboard in the database.
 - Backened Endpoints: User miles and their names are now stored as backend endpoints. Further functionality in the login deliverable will also use MongoDB in the future as to add endpoints for specific user accounts.
 
 ## Login Deliverable
-Login will process accounts and allow users to input information.
-- Registration: Create accounts in the database
+Login processes accounts and allows users to input information.
+- Supports new user registration: New users can be created in the signup.html page and added to the MongoDB database.
+- Supports existing user authentication: Existing users can enter their username and password to proceed to enter miles.
+- Stores and retrieves credentials in MongoDB: Information from existing users is stored in an encrypted format in MongoDB.
+- Restricts application functionality based upon authentication: If a wrong username or password is entered, the login functionality doesn't work.
 
 ## Websocket Deliverable
 Will be used to update the leaderboard and reviews.
