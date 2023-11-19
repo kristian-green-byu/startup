@@ -66,8 +66,9 @@ I used service to add backend endpoints to make my leaderboard function across m
 - The main leaderboard listed on the index.html page imports its values from a backend service call.
 
 ## DB Deliverable
-Values for the leaderboard will be stored in the database.
-- Endpoints: Will store endpoints for miles and other user information
+I stored values for the leaderboard in the database.
+- MongoDB Atlas database: I implemented a MongoDB Atlas database to hold user information and to update the main leaderboard.
+- Backened Endpoints: User miles and their names are now stored as backend endpoints. Further functionality in the login deliverable will also use MongoDB in the future as to add endpoints for specific user accounts.
 
 ## Login Deliverable
 Login will process accounts and allow users to input information.
