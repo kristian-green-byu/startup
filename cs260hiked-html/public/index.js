@@ -1,8 +1,14 @@
-function login() {
-    const nameEl = document.querySelector("#name");
-    localStorage.setItem("userName", nameEl.value);
-    window.location.href = "miles.html";
-  }
+class InputMiles {
+    constructor() {
+        const playerNameEl = document.querySelector('.player-name');
+        playerNameEl.textContent = this.getPlayerName();
+    }
+    getPlayerName() {
+        return localStorage.getItem('userName') ?? 'Blank Username';
+    }
+}
+
+const miles = new InputMiles();
  /*
   async function updateLeaderboard() {
     const leaderboardTable = document.getElementById('leaderboard');

@@ -12,7 +12,10 @@ body {
     margin-top:2%;
     margin-bottom:2%;
 }
-
+.user {
+  margin-right: 20px;
+  margin-top: 15px;
+}
 .default_img {
   display: block;
   margin-left: auto;

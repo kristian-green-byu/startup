@@ -25,21 +25,35 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
               <li><a href="other_trails.html" class="nav-link px-2 text-white">Other Trails</a></li>
-              <li><a href="miles.html" class="nav-link px-2 text-white">Input Miles</a></li>
               <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
             </ul>
     
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="username" class="form-control form-control-dark text-bg-dark" placeholder="Username..." aria-label="Search">
+            <div>
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" id="logged_out_username">
+                <input type="username" class="form-control form-control-dark text-bg-dark" id="userName" placeholder="Your name here" />
             </form>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="password" class="form-control form-control-dark text-bg-dark" placeholder="Password..." aria-label="Search">
-            </form>
-    
-            <div class="text-end">
-              <a href="miles.html" class="btn btn-outline-light me-2">Login</a>
-              <a href="signup.html" class="btn btn-outline-light me-2">Sign Up</a>
             </div>
+            <div>
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" id="logged_out_password">
+                <input type="password" class="form-control form-control-dark text-bg-dark" id="userPassword" placeholder="Password..." aria-label="Search">
+              </form>
+            </div>
+            <div class="text-end">
+              <button class="btn btn-outline-light me-2" onclick="loginUser()" id="logged_out_login">Login</button>
+            </div>
+            <div class="text-end">
+              <a href="signup.html" class="btn btn-outline-light me-2" id="logged_out_signup">Sign Up</a>
+            </div>
+            
+            <p class="user" id="logged_in_welcome">Welcome,</p>
+            <span class="player-name" style="margin-right:1em" id="logged_in_username"></span>
+            <div class="text-end" id="logged_in_enter_miles">
+              <a href="miles.html" class="btn btn-outline-light me-2">Enter Miles</a>
+            </div>
+            <div class="text-end" id="logged_in_logout">
+              <button class="btn btn-outline-light me-2" onclick="logout()" id="logged_out_login">Logout</button>
+            </div>
+
           </div>
         </div>
       </header>
@@ -78,5 +92,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
   </body>
 </html>
