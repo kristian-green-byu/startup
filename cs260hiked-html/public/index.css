@@ -68,3 +68,16 @@ img {
         margin-right: auto;
         width: 60%;
 }
+
+.chat {
+  text-align: center;
+}
+
+legend {
+  font-size: x-large;
+}
+
+.chat_paragraph {
+  padding-left: 5em;
+  padding-right: 5em;
+}

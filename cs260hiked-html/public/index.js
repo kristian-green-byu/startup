@@ -9,38 +9,7 @@ class InputMiles {
 }
 
 const miles = new InputMiles();
- /*
-  async function updateLeaderboard() {
-    const leaderboardTable = document.getElementById('leaderboard');
-    leaderboardTable.innerHTML = ''; // Clear existing rows
 
-    try {
-        // Fetch user data from the backend service
-        const response = await fetch('/api/scores');
-        const userData = await response.json();
-        console.log(userData);
-
-        // Convert the user data into an array and sort it by miles in descending order
-        const sortedUserData = Object.entries(userData)
-            .map(([name, miles]) => ({ name, miles }))
-            .sort((a, b) => b.miles - a.miles);
-            console.log(sortedUserData);
-
-        // Populate the leaderboard table with the sorted user data
-        sortedUserData.forEach((entry, index) => {
-            console.log(entry);
-            const row = `<tr>
-                <td>${index + 1}</td>
-                <td>${entry.name}</td>
-                <td>${entry.miles}</td>
-            </tr>`;
-            leaderboardTable.innerHTML += row;
-        });
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
-*/
 async function updateLeaderboard() {
     const leaderboardTable = document.getElementById('leaderboard');
     leaderboardTable.innerHTML = ''; // Clear existing rows
