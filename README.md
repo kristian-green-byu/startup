@@ -78,7 +78,11 @@ Login processes accounts and allows users to input information.
 - Restricts application functionality based upon authentication: If a wrong username or password is entered, the login functionality doesn't work.
 
 ## Websocket Deliverable
-Will be used to update the leaderboard and reviews.
+Websocket is used in the Hiked website to support the functionality of the chat feature.
+- Backend listens for WebSocket connection: The backend sets up and listens to the WebSocket connection, responding to pong requests.
+- Frontend makes WebSocket connection: Frontend javascript chatClient.js establishes the functionality for the chat feature with WebSocket functionality.
+- Data sent over WebSocket connection: Messages can be sent between uses in real time with the WebSocket connection.
+- WebSocket data displayed in the application interface: At the bottom of the index page, logged on users can chat with each other, and their chats are displayed in the index.html file.
 
 ## React Deliverable
 The application will be designed to function on the React framework.
