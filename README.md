@@ -85,4 +85,8 @@ Websocket is used in the Hiked website to support the functionality of the chat 
 - WebSocket data displayed in the application interface: At the bottom of the index page, logged on users can chat with each other, and their chats are displayed in the index.html file.
 
 ## React Deliverable
-The application will be designed to function on the React framework.
+I took the previous deliverables and converted to work with the React framework with some additions.
+- Bundled using WebPack and Babel as generated from using create-react-app: I bundled my website together with npm create vite@latest
+- Multiple functional react components: All webpages now are .jsx files which are hosted on the main index.html page with react.
+- React router: The react router is used to allow a user to change webpages.
+- React hooks: The Leaderboard page has a simple implementation of a react hook that allows users to press a button to increase the total score listed on the website.
