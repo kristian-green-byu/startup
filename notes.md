@@ -6701,3 +6701,65 @@ If you specify and empty array `[]` as the hook dependency then it is only calle
 Note that hooks can only be used in function style components and must be called at the top scope of the function. That means a hook cannot be called inside of a loop or conditional. This restriction ensures that hooks are always called in the same order when a component is rendered.
 
 
+Sample final questions and answers:
+
+Ports used for HTTP, HTTPS, SSH: The standard ports used by HTTP, HTTPS, and SSH protocols are as follows12:
+
+HTTP: Port 80
+HTTPS: Port 443
+SSH: Port 22
+HTTP status codes in the 300, 400, 500 range345:
+
+300-399: Redirection codes. Further action needs to be taken to complete the request, usually a redirection.
+400-499: Client error codes. The request contains bad syntax or cannot be fulfilled.
+500-599: Server error codes. The server failed to fulfill an apparently valid request.
+
+HTTP header content-type: The Content-Type header is used to indicate the media type of the resource67. For example, for image file its media type will be like image/png or image/jpg, etc. In response, it tells about the type of returned content, to the client.
+
+Attributes of a cookie891011:
+
+Domain: Specifies the domain for which the cookie is valid. An explicitly specified domain must always start with a dot.
+Path: Specifies the path for which the cookie is valid. If the domain and path match, then the cookie will be sent in the request.
+SameSite: Allows you to declare if your cookie should be restricted to a first-party or same-site context.
+HTTPOnly: Helps prevent attacks such as session leakage, since it does not allow the cookie to be accessed via a client-side script such as JavaScript.
+Express middleware: Without the actual Express middleware code, it’s hard to determine what would be logged to the console for an HTTP GET request with a URL path of /foo/bar.
+
+JavaScript fetch return: The fetch() function returns a Promise that resolves to the Response to that request, whether it is successful or not121314.
+
+MongoDB query: The MongoDB query { cost: { $gt: 10 }, name: /fran.*/} will select all documents in the collection where the cost field is greater than 10 and the name field matches the regular expression /fran.*/, which means any string that starts with ‘fran’.
+
+Storing user passwords in a database: User passwords should never be stored in plain text. Instead, passwords should be hashed before storing them in the database1516.
+
+WebSocket protocol: The WebSocket protocol enables ongoing, full-duplex, bidirectional communication between a web client and a web server over an underlying TCP connection171819. It is used for real-time, event-driven communication between clients and servers.
+
+JSX and curly braces: JSX is a syntax extension for JavaScript, used with libraries like React and Vue.js to describe what the UI should look like. The curly braces {} in JSX work similarly to template literals in JavaScript, they let you embed JavaScript expressions inside the HTML/XML-like syntax.
+
+React component rendering: The provided React component will generate the following HTML content:
+
+HTML
+
+<div>
+  <h1>Hello, Sara</h1>
+  <h1>Hello, Cahal</h1>
+  <h1>Hello, Edite</h1>
+</div>
+
+React component rendering with list: The provided React component will generate an unordered list (<ul>) with five list items (<li>), each containing a number from 1 to 5.
+
+React component with useState: The provided React component declares a state variable count initialized to 0. The component displays the current count and a button. When the button is clicked, the count state is incremented by 1, causing the component to re-render with the updated count.
+
+React Hooks: React Hooks are functions that let you use state and other React features without writing a class. They were introduced in React 16.8 to make it easier to reuse stateful logic and write more readable code.
+
+useEffect hook: The useEffect hook is used in React to perform side effects in function components. Side effects could be data fetching, subscriptions, or manually changing the DOM. It serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount in React classes.
+
+React Router code: The provided code sets up routing for a React application using React Router. It defines routes for the root path (/), blogs, and contact. The * path is a catch-all route that matches any path not matched by the other routes.
+
+npm in web development: npm (Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command-line client, also called npm, and an online database of public and paid-for private packages, called the npm registry.
+
+package.json in a npm project: The package.json file in a Node.js project is used to hold various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project’s dependencies.
+
+fetch function: The fetch() function is a modern, promise-based API for making asynchronous HTTP requests in JavaScript. It’s used to request resources, including across the network.
+
+Node.js: Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser. It allows developers to use JavaScript to write command line tools and for server-side scripting.
+
+Vite: Vite is a modern front-end build tool created by Evan You, the creator of Vue.js. It provides a faster and leaner development experience for modern web projects. It offers features like fast hot module replacement (HMR) and true on-demand compilation.
